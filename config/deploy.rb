@@ -1,5 +1,5 @@
-set :application, "app1"
-set :repository,  "git@github.com:teohm/sample-app1.git"
+set :application, "app2"
+set :repository,  "git@github.com:teohm/sample-app2.git"
 set :branch, "master"
 set :keep_releases, 5
 
@@ -48,12 +48,12 @@ set :rails_env, "production"
 # If you are using Passenger mod_rails uncomment this:
  namespace :deploy do
    task :start do
-    run "#{try_sudo} sv up app1"
+    run "#{try_sudo} sv up app2"
    end
    task :stop do
-    run "#{try_sudo} sv down app1"
+    run "#{try_sudo} sv down app2"
    end
    task :restart, :roles => :app, :except => { :no_release => true } do
-    run "#{try_sudo} sv restart app1"
+    run "#{try_sudo} sv restart app2"
    end
  end

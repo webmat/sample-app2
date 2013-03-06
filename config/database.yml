@@ -19,10 +19,10 @@ test:
   timeout: 5000
 
 production:
-  adapter: mysql2
+  adapter: postgresql
   encoding: utf8
   pool: 5
-  database: app1_production
-  username: app1
-  password: app1
+  database: app2_production
+  username: app2
+  password: app2
 
