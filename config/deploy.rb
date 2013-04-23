@@ -1,5 +1,5 @@
 set :application, "app2"
-set :repository,  "git@github.com:teohm/sample-app2.git"
+set :repository,  "https://github.com/teohm/sample-app2.git"
 set :branch, "master"
 set :keep_releases, 5
 
