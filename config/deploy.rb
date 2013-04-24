@@ -48,12 +48,12 @@ set :rails_env, "production"
 # If you are using Passenger mod_rails uncomment this:
  namespace :deploy do
    task :start do
-    run "sudo sv up app2"
+    run "sv up app2"
    end
    task :stop do
-    run "sudo sv down app2"
+    run "sv down app2"
    end
    task :restart, :roles => :app, :except => { :no_release => true } do
-    run "sudo sv restart app2"
+    run "sv restart app2"
    end
  end
