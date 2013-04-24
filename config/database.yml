@@ -25,4 +25,4 @@ production:
   database: app2_production
   username: app2
   password: app2
-
+  host:     localhost
